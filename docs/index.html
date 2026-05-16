@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watt — The Lean Desktop Project</title>
+  <meta name="description" content="Watt is the umbrella for two sister desktop suites by Geir Isene: CHasm in x86_64 assembly, Fe2O3 in Rust. A complete Linux desktop tuned to be cold when idle.">
+  <link rel="icon" href="img/watt.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Watt — The Lean Desktop Project">
+  <meta property="og:description" content="Two sister suites — CHasm (x86_64 assembly) and Fe2O3 (Rust) — that together form a complete Linux desktop tuned to be cold when idle. 3.6 W at the wall.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/watt.svg">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <img src="img/watt.svg" alt="Watt logo" class="hero-logo">
+      <h1>Watt</h1>
+      <p class="tagline">The&nbsp;Lean&nbsp;Desktop&nbsp;Project</p>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/idle-3.6W-4ade80" alt="3.6W idle">
+        <img src="https://img.shields.io/badge/license-Unlicense-green" alt="Unlicense">
+        <img src="https://img.shields.io/badge/platform-Linux-blue" alt="Linux">
+        <img src="https://img.shields.io/badge/runtime-zero-brightgreen" alt="zero runtime">
+      </div>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <p>
+        The premise is simple: <span class="accent">idle should mean idle</span>.
+        Every wakeup, every poll, every fork on a timer is a watt the
+        battery doesn't give back. Two sister suites grew out of pulling
+        on that thread &mdash;
+        <a href="https://isene.org/chasm/" style="color:var(--cyan); text-decoration:none;"><span class="accent-cyan">CHasm</span></a>
+        in pure x86_64 assembly that paints the pixels and reads the
+        keys, and
+        <a href="https://isene.org/fe2o3/" style="color:var(--rust-glow); text-decoration:none;"><span class="accent">Fe<sub>2</sub>O<sub>3</sub></span></a>
+        in Rust on a shared TUI foundation that does mail, files,
+        calendars, charts, and the rest. Together they form a complete
+        Linux desktop that costs about three watts to sit still &mdash;
+        roughly a working day and then some on a single charge, screen
+        on. Pick a door.
+      </p>
+    </div>
+  </section>
+
+  <section class="doors-section">
+    <div class="container">
+      <div class="doors">
+
+        <a class="door chasm" href="https://isene.org/chasm/">
+          <img class="door-logo" src="img/chasm.svg" alt="CHasm logo">
+          <h2>CHasm</h2>
+          <p class="door-kind"><code>x86_64 asm</code> &middot; the bedrock</p>
+          <p class="door-desc">
+            Shell, terminal emulator, tiling window manager, status bar,
+            file viewer, font rasterizer, screen locker. A complete X
+            session in under 500&nbsp;KB of executable code. No libc,
+            no toolkit, no dynamic linking, no runtime.
+          </p>
+          <span class="door-cta">Enter &rarr;</span>
+        </a>
+
+        <a class="door fe2o3" href="https://isene.org/fe2o3/">
+          <img class="door-logo" src="img/fe2o3.svg" alt="Fe2O3 logo">
+          <h2>Fe<sub>2</sub>O<sub>3</sub></h2>
+          <p class="door-kind"><code>rust on crust</code> &middot; the application layer</p>
+          <p class="door-desc">
+            Modal editor, file manager, web browser, messaging hub,
+            calendar, astronomy, movies, music, color picker, battery
+            triage. Single static binaries on one shared TUI library.
+            Microsecond startup, async I/O, cold when idle.
+          </p>
+          <span class="door-cta">Enter &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers">
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="metric"><span class="v">3.6&nbsp;W</span><span class="k">Idle draw</span></div>
+        <div class="metric"><span class="v">19&nbsp;h</span><span class="k">On a 70 Wh battery</span></div>
+        <div class="metric"><span class="v">&lt; 500&nbsp;KB</span><span class="k">CHasm session</span></div>
+        <div class="metric"><span class="v">~9&nbsp;&micro;s</span><span class="k">Shell startup</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        Watt is maintained by
+        <a href="https://isene.com">Geir Isene</a>.
+        Everything inside both suites is public domain (Unlicense).
+      </p>
+      <p>
+        Source for this page:
+        <a href="https://github.com/isene/watt">isene/watt</a>
+        &middot;
+        Source for everything else:
+        <a href="https://github.com/isene">github.com/isene</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
